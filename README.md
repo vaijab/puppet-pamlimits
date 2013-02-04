@@ -22,7 +22,7 @@ Below are examples for using hiera with yaml backend.
     pamlimits::conf:
       '*/soft/nofile':
         value: 1024
-      'joe/-/nofile':
+      '@mygroup/-/nproc':
         value: 128
 
 ##  Authors
