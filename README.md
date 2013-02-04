@@ -1,5 +1,7 @@
 # puppet-pamlimits
-This module allows to manage `/etc/security/limits.conf` file. 
+This module allows to manage `/etc/security/limits.conf` file.
+
+It is tested using Hiera with yaml backend on a puppet master.
 
 ## Parameters
 * `conf` - reads a supplied hash and compiles `limits.conf` file. See examples
