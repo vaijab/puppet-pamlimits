@@ -1,13 +1,16 @@
 # puppet-pamlimits
-This class allows to manage <code>/etc/security/limits.conf</code> file.
+This module allows to manage `/etc/security/limits.conf` file. 
 
 ## Parameters
-* `conf` - reads a supplied hash and compiles `limits.conf` file. See examples for more details.
+* `conf` - reads a supplied hash and compiles `limits.conf` file. See examples
+for more details.
 
 ## Requires
-None
+Hiera + yaml backend on the puppet master.
 
 ## Examples
+Below are examples for using hiera with yaml backend.
+
     ---
     classes:
       - 'pamlimits'
@@ -24,3 +27,4 @@ None
 
 ##  Authors
 - Vaidas Jablonskis <jablonskis@gmail.com>
+
