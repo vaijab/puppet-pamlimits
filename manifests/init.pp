@@ -32,7 +32,7 @@ class pamlimits(
   $configuration = hiera_hash('pamlimits::conf', undef),
   ) {
   case $::operatingsystem {
-    CentOS, RedHat: {
+    CentOS, RedHat, Debian, Ubuntu: {
       $config_file  = '/etc/security/limits.conf'
     }
     default: {
